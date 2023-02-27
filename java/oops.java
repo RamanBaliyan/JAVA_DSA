@@ -28,7 +28,7 @@ public class oops{
      pen a2=new pen(a1);
      a2.printcolor();
      a2.sum();
-
+b
 
 
         
