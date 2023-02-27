@@ -11,7 +11,7 @@ class student{
         System.out.println(age );
     }
 }
-public class oops_2 {
+public class oops_2polymorphism {
     public static void main(String[] args) {
         student s1 = new student();
         s1.age=20;

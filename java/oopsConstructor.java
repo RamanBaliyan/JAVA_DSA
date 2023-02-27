@@ -18,7 +18,7 @@ System.out.println(c);
     }
     pen(){}
 }
-public class oops{
+public class oopsConstructor{
 
     public static void main(String[] args) {
      pen a1=new pen();
