@@ -1,11 +1,11 @@
-import javax.sound.sampled.SourceDataLine;
-
 interface animals{
     public void walk();
     int eye = 2;
     //animal(){} in interface we cannot make the constuctor and also method 
 }
-class horse implements animals{
+interface herbivores{
+}
+class horse implements animals,herbivores{          //multiple inheritance possible using interface
     public void walk(){
     System.out.println("Horse walk on four legs");
     }
