@@ -78,6 +78,21 @@ public class LL {
     public void getsize(){
         System.out.println(size);
     }
+    public void reverseString(){
+        if(head == null || head.next==null){
+            return;
+        }
+        node prevNode = head;
+        node currNode = head.next;
+        while(currNode!=null){
+            node nextNode = currNode.next;
+            currNode.next = prevNode;
+            prevNode = currNode;
+            currNode = nextNode;
+        }
+        head.next=null;
+        head = prevNode; 
+    }
     public static void main(String[] args) {
         LL list=new LL();
         list.addFirst("a");
@@ -94,6 +109,8 @@ public class LL {
         list.addlast("Raman");
         list.print();
         list.getsize();
+        list.reverseString();
+        list.print();
     }
     
 }
