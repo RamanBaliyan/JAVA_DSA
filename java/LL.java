@@ -1,5 +1,6 @@
 public class LL {
-    int size;
+    
+    int size=0;
     node head;
     class node{
         String data;
@@ -93,6 +94,22 @@ public class LL {
         head.next=null;
         head = prevNode; 
     }
+    public node remove(int n)
+    {
+        
+        if(head.next==null){
+            System.out.println("null");
+            
+        }
+         
+        for(int i=1;i<size-n;i++){
+            head=head.next;
+            
+        }
+        head.next=head.next.next;
+        return head;
+    
+    }
     public static void main(String[] args) {
         LL list=new LL();
         list.addFirst("a");
@@ -102,14 +119,16 @@ public class LL {
         list.print();
         list.addlast("Raman");
         list.print();
-        list.firstDelete();
-        list.lastDelete();
+     //   list.firstDelete();
+       // list.lastDelete();
+      //  list.print();
+        list.getsize();
+        list.addlast("baliyan");
         list.print();
         list.getsize();
-        list.addlast("Raman");
-        list.print();
-        list.getsize();
-        list.reverseString();
+        //list.reverseString();
+       // list.print();
+        list.remove(2);
         list.print();
     }
     
