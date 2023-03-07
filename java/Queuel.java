@@ -62,15 +62,9 @@ public class Queuel {
 
         }
         
-<<<<<<< HEAD
-    } 
-
-    }
-=======
 
 
     }
 
     
 }
->>>>>>> c3d777819c0ae6f8ccc508eb0292abefc9889f10
