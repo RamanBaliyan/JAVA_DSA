@@ -56,7 +56,7 @@ public class Queuel {
         Q.add(31);
         Q.add(41);
         Q.add(5);
-        while(Q.isEmpty()){
+        while(!Q.isEmpty()){
             System.out.println(Q.peek());
             Q.remove();
 
