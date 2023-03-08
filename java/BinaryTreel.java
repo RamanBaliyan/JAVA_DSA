@@ -110,16 +110,9 @@ public class BinaryTreel {
                 this.ht=ht;
                 this.diam=diam;
             }
-            public static diam diameter(node root){
-                if(root==null){
-                    return new diam(0,0);
-                }
-                diam left=diameter(root.left);
-                diam right=diameter(root.right);
-
-            }
-            }
         }
+         
+        
     
     
     public static void main(String[] args) {
