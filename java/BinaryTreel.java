@@ -78,6 +78,48 @@ public class BinaryTreel {
                 }
             }
         }
+        public static int Count(node root){ //count
+            if(root==null){
+                return 0;
+            }
+            int leftnodes= Count(root.left);
+            int rightnodes = Count(root.right);
+            return leftnodes+rightnodes+1;
+        }
+        public static int Sum(node root){ //count
+            if(root==null){
+                return 0;
+            }
+            int leftnodes= Sum(root.left);
+            int rightnodes = Sum(root.right);
+            return leftnodes+rightnodes+root.data;
+        }
+        public static int height(node root){
+            if(root==null){
+                return 0;
+            }
+            int leftHeight=height(root.left);
+            int rightHeight= height(root.right);
+            int h = Math.max(leftHeight , rightHeight) + 1;
+            return h;
+        }
+        public class diam{
+                int ht;
+                int diam;
+            diam(int ht, int diam){
+                this.ht=ht;
+                this.diam=diam;
+            }
+            public static diam diameter(node root){
+                if(root==null){
+                    return new diam(0,0);
+                }
+                diam left=diameter(root.left);
+                diam right=diameter(root.right);
+
+            }
+            }
+        }
     
     
     public static void main(String[] args) {
@@ -91,6 +133,9 @@ public class BinaryTreel {
         postorder(root);
         System.out.println();
         levelOrder(root);
+        System.out.println(Count(root));
+        System.out.println(Sum(root));
+        System.out.println(height(root) + "height");
     }
 } 
 
