@@ -35,6 +35,8 @@ public class Graph1 {
         for(int i=0;i<graph[2].size();i++){
             edge e=graph[2].get(i);
             System.out.println(e.dest +"," + e.wt);
+            System.out.println("Raman baliyan");
+
         }
     }
     
