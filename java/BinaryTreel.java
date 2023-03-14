@@ -118,7 +118,7 @@ public class BinaryTreel {
     public static void main(String[] args) {
         int nodes[]={1,2,3,-1,-1,5,-1,-1,3,-1,6,-1,-1};
         BinaryTree b=new BinaryTree();
-        node root = b.buildTree(nodes);
+         node root = b.buildTree(nodes);
         inorder(root);
         System.out.println();
         preOrder(root);
