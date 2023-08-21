@@ -3,7 +3,7 @@ package arrayQuestions;
 public class kadaneArray {
 
     public static void main(String[] args) {
-        int a[]={-1,-2,-3,-4,-5};
+        int a[]={2,67,-1,34,-56};
         int sum1=0;
         int sum2=a[0];
         for(int i=0;i<5;i++){
