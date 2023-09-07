@@ -10,13 +10,18 @@ public class reverseByKelement {
     
 
 static void reverse(int ar[],int n,int element){
-    ArrayList<Integer>a1=new ArrayList<>();
+    int res[]=new int [n];
+    int j=0;
     for(int i=element;i<n;i++){
-        a1.add(ar[i]);
+        res[j]=ar[i];
+        j++;
     }
     for(int i=0;i<element;i++){
-        a1.add(ar[i]);
+        res[j]=ar[i];
+        j++;
     }
-    System.out.println(a1);
+    for(int i=0;i<n;i++){
+    System.out.print(res[i]);
+    }
     }
 }
