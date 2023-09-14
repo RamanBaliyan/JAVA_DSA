@@ -8,10 +8,11 @@ class Pair{
         this.first=first;
         this.second=second;
     }
-    Pair()
+     Pair()
     {
         
     }
+   
 }
 class TUF{
 static void Sortelementsbyfreq(int arr[], int n)

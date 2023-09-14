@@ -23,5 +23,6 @@ static void reverse(int ar[],int n,int element){
     for(int i=0;i<n;i++){
     System.out.print(res[i]);
     }
+   
     }
 }
