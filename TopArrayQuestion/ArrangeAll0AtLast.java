@@ -31,7 +31,7 @@ public class ArrangeAll0AtLast {
         }
 
         //no non-zero elements:
-        if (j == -1) return a;
+        // if (j == -1) return a;
 
         //Move the pointers i and j
         //and swap accordingly:
@@ -44,6 +44,6 @@ public class ArrangeAll0AtLast {
                 j++;
             }
         }
-        return a;
+        // return a;
     }
 }
